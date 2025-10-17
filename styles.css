@@ -1,0 +1,183 @@
+*{
+background-color: aliceblue;
+    width: 100;
+    padding: 0;
+    margin: 0;
+}
+.logotext{
+    position: static;
+    border: 1px solid cornflowerblue;
+}
+h1{
+    color: cornflowerblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+.regions{
+    border: 1px solid cornflowerblue;
+    width: 80%;
+    padding: 10px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 170px;
+
+}
+.regions h1{
+    text-align: center;
+    margin-right: -10px;
+}
+.logotext img{
+    width: 25px;
+    display: flex;
+    float: right;
+  margin-top: -39px;
+}
+.logotext a {
+    padding: 0;
+}
+a, p{
+    color: gray;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px;
+    text-decoration: none;
+}
+a{
+    display: flex;
+    float:right;
+    margin-top: -90px;
+    margin-right: 30px;
+    padding: 40px;
+}
+h4{
+    color: rgb(183, 172, 172);
+    font-family:sans-serif;
+    margin-left: 90px;
+    padding: 10px;
+}
+.line{
+    border-left: 6px solid cornflowerblue;
+    height: 400px;
+    position: absolute;
+    right: 70%;
+    top: 100px;
+}
+
+span{
+    font-weight: bold;
+    color: cornflowerblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+  * {
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  table {
+      width: 100%;
+      font-size: 14px;
+      color: saddlebrown;
+  }
+
+  thead {
+      background-color: cornflowerblue;
+     
+  }
+
+  th,td {
+      text-align: center;
+      border: 0;
+      border-bottom: 1px solid cadetblue;
+      height: 50px;
+      border-right: 1px solid cornflowerblue;
+      border-left: 1px solid cornflowerblue;
+      border-top: 1px solid cornflowerblue;
+  }
+  @media (max-width: 700px) {
+    th, td {
+        display: block;
+        float: left;
+      
+    }
+
+    th {
+        width: 100%;
+        background-color: rgb(rgb(2, 35, 2));
+       
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-top: 10px;
+        font-weight: bolder;
+    }
+
+    td {
+        width: 33.33%;
+        
+    }
+   
+
+    thead th {
+        display: none;
+
+    }
+    table{
+       margin-left: -48%;
+       margin-right: 0px;
+       margin-top: 100px;
+       text-align: center;
+       padding: 0;
+    }
+    .logotext img {
+        margin-right: 1px;
+        padding: 0;
+        margin-top: 50px;
+    
+    }
+    p {
+        margin-left: -160px;
+        margin-top: 60px;
+        padding: 0%;
+
+    }
+   
+    
+    .regions{
+    height: 800%;
+    display: flex;
+    float: right;
+    margin-right: 50px;
+    width: 80%;
+    text-align: center;
+    }
+    .regions h1{
+        padding: 0%;
+       
+    }
+    .table{
+        display: none;
+        margin-left: 30px;
+    }
+
+    td::before {
+        display: block;
+        font-weight: bold;
+        margin-top: .33em;
+        margin-bottom: .33em;
+    }
+
+   
+
+    
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+    td {
+        width: 25%;
+    
+    }
+    
+    
+}

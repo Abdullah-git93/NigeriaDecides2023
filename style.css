@@ -1,0 +1,258 @@
+body{
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f2f3f4;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+ 
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(44, 91, 44);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+}
+nav ul li a:hover{
+    color: #ff5e2C;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h1{
+    font-size: 40px;
+
+
+}
+.col-1 h3{
+    font-size: 30px;
+    color: rgb(50, 105, 50);
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: gray;
+    font-weight: 100;
+    margin: 30px 0;
+    font-size: 20px;
+
+}
+
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background-color: aqua;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button img{
+    width: 30px;
+    display: none;
+    color: aqua;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
+button:hover img{
+    display: block;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(rgb(76, 169, 76),rgb(148, 212, 162));
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .controller{
+    width: 70%;
+    margin-left: 100px;
+
+}
+.mySlides {
+    display: none;
+}
+    img {vertical-align: middle;
+    width: 100px;
+    }
+
+
+.slideshow-container{
+    max-width: 100px;
+    position: relative;
+    margin: auto;
+
+}
+
+.text{
+    color: #F2f2f2;
+    font-size: 15px;
+    position: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext{
+    color: #F2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active{
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.social-link img {
+  margin: 20px;
+    width: 20px;
+}
+.social-link{
+    text-align: center;
+}
+@media only screen and (max-width: 700px){
+    nav ul{
+        width: 100%;
+        border-radius: 10px;
+        height: 270px;
+    background: linear-gradient(#06beb6,#48b1bf);
+        position: absolute;
+        top: 65px;
+        right: 0;
+        z-index: 3;
+    }
+    nav ul li {
+        display: block;
+        padding: 10px;
+        font-weight: bold;
+      
+
+    }
+    nav ul li a {
+        color: #fff
+        }
+    .menu-icon{
+        display: block;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5sec;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .controller{
+        width: 77%;
+        display: flex;
+        margin-left: 20px ;
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h1{
+        font-size: 30px;
+    }
+    .col-1 h3 {
+        font-size: 25px;
+    }
+    .subscribe {
+        align-items: center;
+        
+    }
+}
+
+ #demo {
+    font-size: 30px;
+    text-align: center;
+   
+    padding: 20px;
+    border-radius: 20px;
+}
